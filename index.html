@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- bài tập 1  -->
+        <div class="col-sm-6">
+          <div class="card-header">Bài 1: Quản Lý Tuyển Sinh</div>
+          <div class="card">
+            <div class="card-body">
+              <div class="mb-3">
+                <select id="member1" class="form-select">
+                  <option value="">Chọn khu vực</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <select id="member2" class="form-select">
+                  <option value="">Chọn đối tượng</option>
+                  <option value="One">1</option>
+                  <option value="Two">2</option>
+                  <option value="three">3</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="number4" class="form-label">Nhập điểm chuẩn</label>
+                <input
+                  type="text"
+                  id="number4"
+                  class="form-control"
+                  placeholder="Nhập điểm chuẩn"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="number1" class="form-label"
+                  >Điểm môn thứ nhất</label
+                >
+                <input
+                  type="text"
+                  id="number1"
+                  class="form-control"
+                  placeholder="Nhập điểm môn thứ nhất"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="number2" class="form-label">Điểm môn thứ hai</label>
+                <input
+                  type="text"
+                  id="number2"
+                  class="form-control"
+                  placeholder="Nhập điểm môn thứ hai"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="number3" class="form-label">Điểm môn thứ ba</label>
+                <input
+                  type="text"
+                  id="number3"
+                  class="form-control"
+                  placeholder="Nhập điểm môn thứ ba"
+                />
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-success" onclick="result1()">
+                  Kết Quả
+                </button>
+              </div>
+
+              <div id="result1" style="display: none">
+                <p id="ketQua"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bài tập 2 -->
+        <div class="col-sm-6">
+          <div class="card-header">Bài 2: Tính tiền điện</div>
+          <div class="card">
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="nameObj" class="form-label">Họ và tên</label>
+                <input
+                  type="text"
+                  id="nameObj"
+                  class="form-control"
+                  placeholder="họ và tên"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="number7" class="form-label">nhập KW điện</label>
+                <input
+                  type="text"
+                  id="number7"
+                  class="form-control"
+                  placeholder="Nhập KW điện"
+                />
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-success" onclick="result2()">
+                  Tính tiền điện
+                </button>
+              </div>
+
+              <div id="result2" style="display: none">
+                <p id="Pay"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
